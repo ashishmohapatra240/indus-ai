@@ -17,8 +17,8 @@ export default function Button({
     "inline-flex items-center justify-center rounded-full font-bold transition-all font-raleway";
 
   const variants = {
-    primary: "bg-white text-black hover:bg-white/90",
-    secondary: "border border-white/20 text-white hover:bg-white/10",
+    primary: "bg-gray-900 text-white hover:bg-gray-800",
+    secondary: "border border-gray-300 text-gray-700 hover:bg-gray-50",
   };
 
   const sizes = {

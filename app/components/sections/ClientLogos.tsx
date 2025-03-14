@@ -14,15 +14,15 @@ const clients = [
 
 export default function ClientLogos() {
   return (
-    <section className="py-24 border-t border-white/[0.05] overflow-hidden">
+    <section className="py-24 overflow-hidden bg-white">
       <Container>
-        <h2 className="text-center text-sm font-medium text-white/40 mb-16 font-raleway">
+        <h2 className="text-center text-sm font-medium text-gray-500 mb-16 font-raleway">
           Trusted by world-class companies
         </h2>
       </Container>
       <Marquee
         gradient={true}
-        gradientColor="black"
+        gradientColor="#F9FAFB"
         speed={50}
         className="overflow-hidden"
       >
@@ -30,7 +30,7 @@ export default function ClientLogos() {
           {clients.map((client) => (
             <div
               key={client.name}
-              className="text-2xl font-medium text-white/20 hover:text-white/40 transition-colors duration-300 w-[200px] flex items-center justify-center font-raleway"
+              className="text-2xl font-medium text-gray-400 hover:text-gray-600 transition-colors duration-300 w-[200px] flex items-center justify-center font-raleway"
             >
               {client.name}
             </div>
