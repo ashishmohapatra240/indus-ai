@@ -76,7 +76,7 @@ export default function Contact() {
       <Navbar />
 
       {/* Hero Section */}
-      <section className="pt-32 pb-24 bg-gradient-to-b from-gray-50 to-white">
+      <section className="pt-32 pb-16 bg-gradient-to-b from-gray-50 to-white">
         <Container>
           <div className="max-w-3xl mx-auto text-center">
             <h1 className="text-5xl font-bold text-gray-900 mb-6 font-raleway">
@@ -90,7 +90,7 @@ export default function Contact() {
       </section>
 
       {/* Contact Methods */}
-      <section className="py-24">
+      <section className="py-4">
         <Container>
           <div className="grid md:grid-cols-3 gap-8">
             {contactMethods.map((method) => (
