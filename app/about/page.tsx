@@ -103,17 +103,24 @@ const team = [
   },
   {
     name: "Nihar Ranjan Rout",
-    role: "Chief Technology Officer",
+    role: "Chief Information Officer",
     image: "/images/team/Nihar.jpg",
     bio: "Transforming Businesses with Custom Software Solutions",
     linkedin: "https://www.linkedin.com/in/niharrout/",
   },
   {
-    name: "Samikshya Kar",
-    role: "Head of AI Solutions",
-    image: "/images/team/Samikshya.jpg",
-    bio: "Specialized in implementing AI solutions for Fortune 500 companies.",
-    linkedin: "https://www.linkedin.com/in/samikshya-kar",
+    name: "Zameer Khan",
+    role: "Chief Marketing Officer",
+    image: "/images/team/Zameer.jpg",
+    bio: "IIMC ( Fintech and Blockchain) EX Banker",
+    linkedin: "https://www.linkedin.com/in/zameerkhan/",
+  },
+  {
+    name: "Dr. Ravi Shankar",
+    role: "Professor, IIT Delhi",
+    image: "/images/team/Ravi.jpg",
+    bio: "Mentor and Advisor in AI and Machine Learning",
+    linkedin: "https://www.linkedin.com/in/ravi-shankar/",
   },
 ];
 
@@ -125,24 +132,30 @@ export default function About() {
       {/* Hero Section */}
       <section className="relative pt-32 pb-24 overflow-hidden bg-gray-50">
         <Container>
-          <div className="grid lg:grid-cols-2 gap-12 items-center">
+          <div className="grid lg:grid-cols-2 gap-24 items-center justify-between">
             <div>
               <h1 className="text-5xl font-bold text-gray-900 mb-6 font-raleway">
                 Pioneering the Future of AI Technology
               </h1>
               <p className="text-xl text-gray-600 leading-relaxed font-raleway">
-                We&apos;re on a mission to transform businesses through the
-                power of artificial intelligence. Our team of experts combines
-                deep technical knowledge with practical business experience to
-                deliver AI solutions that drive real results.
+                Indus AI is a leading software development and IT consulting
+                company, known for delivering innovative and robust digital
+                solutions. We empower businesses to scale and thrive by
+                leveraging the expertise of our highly skilled product
+                development team. With deep expertise in Artificial
+                Intelligence, Machine Learning, Cloud Computing, and
+                cutting-edge software development, we help you transform ideas
+                into profitable ventures. Our elite team of professionals
+                ensures seamless, future-ready solutions for web and mobile app
+                development, driving growth and expanding your customer base.
               </p>
             </div>
             <div className="relative">
-              <div className="absolute inset-0 bg-gradient-to-r from-blue-500 to-purple-500 rounded-3xl blur-3xl opacity-20" />
+              <div className="absolute inset-0 justify-center items-center" />
               <Image
-                src="/images/about/hero.webp"
+                src="/images/about/hero.png"
                 alt="AI Technology"
-                className="relative rounded-3xl shadow-xl"
+                className="relative rounded-3xl max-w-[400px]"
                 width={1000}
                 height={1000}
               />
@@ -170,17 +183,20 @@ export default function About() {
       </section>
 
       {/* Mission Section */}
-      <section className="py-24 bg-gray-900 text-white">
+      <section className="py-24 bg-[#2C514C] text-white">
         <Container>
           <div className="max-w-4xl mx-auto text-center">
             <h2 className="text-3xl font-bold mb-6 font-raleway">
               Our Mission
             </h2>
             <p className="text-xl text-gray-300 leading-relaxed font-raleway">
-              To empower organizations with cutting-edge AI solutions that drive
-              innovation, efficiency, and growth. We believe in making
-              artificial intelligence accessible, ethical, and impactful for
-              businesses of all sizes.
+              At Indus AI, our mission is to redefine the digital experience by
+              delivering cost-effective, user-centric, and innovative technology
+              solutions. We empower businesses with cutting-edge AI, software
+              development, and cloud solutions, ensuring seamless adaptability
+              in an ever-evolving digital landscape. By prioritizing efficiency,
+              functionality, and innovation, we help our clients enhance their
+              market presence and drive sustainable growth.
             </p>
           </div>
         </Container>
@@ -203,7 +219,7 @@ export default function About() {
                 key={value.title}
                 className="bg-white p-8 rounded-xl shadow-sm border border-gray-200 flex gap-6"
               >
-                <div className="flex-shrink-0 w-12 h-12 rounded-lg bg-blue-50 flex items-center justify-center text-blue-600">
+                <div className="flex-shrink-0 w-12 h-12 rounded-lg bg-blue-50 flex items-center justify-center text-[#2C514C]">
                   {value.icon}
                 </div>
                 <div>
@@ -232,7 +248,7 @@ export default function About() {
               through AI.
             </p>
           </div>
-          <div className="grid md:grid-cols-3 gap-8">
+          <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 gap-6">
             {team.map((member) => (
               <TeamMember key={member.name} {...member} />
             ))}
