@@ -5,29 +5,55 @@ import { useState } from "react";
 
 const faqs = [
   {
-    question: "How can AI benefit my business?",
+    question:
+      "What is Indus AI, and how is it different from other AI companies?",
     answer:
-      "AI can enhance operational efficiency, improve decision-making, automate routine tasks, and provide valuable insights from your data. Our solutions are tailored to deliver measurable ROI across various business functions.",
+      "Indus AI is not just another AI company—we specialize in personalized and secure AI solutions that are cost-effective and enterprise-ready. From custom LLMs to AI-powered customer support, we ensure that businesses of all sizes can harness AI without the complexity or high costs.",
   },
   {
-    question: "What industries do you specialize in?",
+    question: "What products does Indus AI offer?",
     answer:
-      "We work across multiple sectors including finance, healthcare, retail, manufacturing, and technology. Our AI solutions are customized to address industry-specific challenges and requirements.",
+      "We currently offer two flagship AI solutions: Vijaya AI – A personalized LLM designed for enterprises and government organizations, providing on-premise and cloud AI deployment at a fraction of the cost. Vivone AI – An intelligent AI agent for chat and voice-based customer support, helping businesses automate and enhance customer interactions.",
   },
   {
-    question: "How long does implementation typically take?",
+    question: "Why should businesses choose Indus AI for AI deployment?",
     answer:
-      "Implementation timelines vary based on project scope and complexity. Typically, our initial solutions can be deployed within 2-3 months, with continuous optimization and scaling thereafter.",
+      "Tailored AI models – No one-size-fits-all; we fine-tune AI for your specific needs. Secure & Scalable – Deploy AI on-premise or in the cloud with full data control. Cost Savings – Achieve up to 70% cost reduction compared to traditional AI solutions. Enterprise-Ready – We build AI solutions that seamlessly integrate into your existing business workflows.",
   },
   {
-    question: "What kind of support do you provide?",
+    question: "Can SMEs afford AI solutions from Indus AI?",
     answer:
-      "We offer comprehensive support including 24/7 technical assistance, regular maintenance, performance monitoring, and continuous optimization of AI models to ensure optimal results.",
+      "Absolutely! Our mission is to make AI accessible to SMEs by offering affordable, high-impact solutions that optimize processes, improve decision-making, and enhance customer experiences—without the need for an in-house AI team.",
   },
   {
-    question: "How do you ensure data security?",
+    question: "How does Vivone AI improve customer support?",
     answer:
-      "We implement industry-leading security protocols and comply with global data protection standards. Your data is encrypted, securely stored, and handled according to strict privacy guidelines.",
+      "Vivone AI provides instant, context-aware responses through chat and voice AI, reducing wait times and enhancing user experience. Whether it’s handling FAQs, assisting with orders, or escalating complex queries to human agents, Vivone AI ensures seamless customer interactions—24/7.",
+  },
+  {
+    question: "What industries can benefit from Vijaya AI and Vivone AI?",
+    answer:
+      "Our AI solutions cater to a wide range of industries, including: E-commerce & Retail – AI-driven customer support and product recommendations. Banking & Finance – Secure AI models for fraud detection and customer service. Healthcare – AI assistants for patient queries and medical data processing. Government & Enterprises – On-premise AI for secure and large-scale operations.",
+  },
+  {
+    question: "How does Indus AI ensure data security and privacy?",
+    answer:
+      "We prioritize data sovereignty and offer on-premise deployment, meaning businesses can keep sensitive information within their own infrastructure. For cloud solutions, we implement end-to-end encryption and enterprise-grade security to safeguard user data.",
+  },
+  {
+    question: "Can I integrate Indus AI products into my existing system?",
+    answer:
+      "Yes! Our AI solutions are designed to be plug-and-play, with APIs and SDKs that easily integrate into your CRM, ERP, or customer service platforms.",
+  },
+  {
+    question: "What’s the future of AI at Indus AI?",
+    answer:
+      "We’re constantly innovating! Future plans include AI-powered business insights, multilingual AI agents, and hyper-personalized AI solutions for even more industries. Stay tuned as we shape the future of AI adoption!",
+  },
+  {
+    question: "How can I get started with Indus AI?",
+    answer:
+      "Simple! Reach out to us at info@indusai.app or visit www.indusai.app to schedule a free AI consultation. Let’s build the future of AI together!",
   },
 ];
 
