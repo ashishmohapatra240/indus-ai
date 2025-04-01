@@ -17,7 +17,7 @@ export default function Button({
     "inline-flex items-center justify-center rounded-full font-bold transition-all font-raleway";
 
   const variants = {
-    primary: "bg-gray-900 text-white hover:bg-gray-800",
+    primary: "bg-[#2C514C] text-white hover:bg-[#132A22] transition-all duration-300",
     secondary: "border border-gray-300 text-gray-700 hover:bg-gray-50",
   };
 
@@ -29,7 +29,7 @@ export default function Button({
 
   return (
     <button
-      className={`${baseStyles} ${variants[variant]} ${sizes[size]} ${className}`}
+      className={`${baseStyles} ${variants[variant]} ${sizes[size]} ${className} cursor-pointer`}
       onClick={onClick}
     >
       {children}
