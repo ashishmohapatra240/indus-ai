@@ -1,74 +1,74 @@
 import Navbar from "../components/navigation/Navbar";
 import Footer from "../components/sections/Footer";
 import Container from "../components/ui/Container";
-import Button from "../components/ui/Button";
+// import Button from "../components/ui/Button";
 import ReadyToTransform from "../components/sections/ReadyToTransform";
 
-const contactMethods = [
-  {
-    name: "Sales",
-    description: "Discuss AI solutions for your business",
-    phone: "+1 (555) 123-4567",
-    email: "sales@indusai.com",
-    icon: (
-      <svg
-        className="w-6 h-6"
-        fill="none"
-        stroke="currentColor"
-        viewBox="0 0 24 24"
-      >
-        <path
-          strokeLinecap="round"
-          strokeLinejoin="round"
-          strokeWidth={2}
-          d="M13 7h8m0 0v8m0-8l-8 8-4-4-6 6"
-        />
-      </svg>
-    ),
-  },
-  {
-    name: "Support",
-    description: "Get help with your AI implementation",
-    phone: "+1 (555) 234-5678",
-    email: "support@indusai.com",
-    icon: (
-      <svg
-        className="w-6 h-6"
-        fill="none"
-        stroke="currentColor"
-        viewBox="0 0 24 24"
-      >
-        <path
-          strokeLinecap="round"
-          strokeLinejoin="round"
-          strokeWidth={2}
-          d="M18.364 5.636l-3.536 3.536m0 5.656l3.536 3.536M9.172 9.172L5.636 5.636m3.536 9.192l-3.536 3.536M21 12a9 9 0 11-18 0 9 9 0 0118 0zm-5 0a4 4 0 11-8 0 4 4 0 018 0z"
-        />
-      </svg>
-    ),
-  },
-  {
-    name: "Partnerships",
-    description: "Explore collaboration opportunities",
-    phone: "+1 (555) 345-6789",
-    email: "partners@indusai.com",
-    icon: (
-      <svg
-        className="w-6 h-6"
-        fill="none"
-        stroke="currentColor"
-        viewBox="0 0 24 24"
-      >
-        <path
-          strokeLinecap="round"
-          strokeLinejoin="round"
-          strokeWidth={2}
-          d="M17 20h5v-2a3 3 0 00-5.356-1.857M17 20H7m10 0v-2c0-.656-.126-1.283-.356-1.857M7 20H2v-2a3 3 0 015.356-1.857M7 20v-2c0-.656.126-1.283.356-1.857m0 0a5.002 5.002 0 019.288 0M15 7a3 3 0 11-6 0 3 3 0 016 0zm6 3a2 2 0 11-4 0 2 2 0 014 0zM7 10a2 2 0 11-4 0 2 2 0 014 0z"
-        />
-      </svg>
-    ),
-  },
-];
+// const contactMethods = [
+//   {
+//     name: "Sales",
+//     description: "Discuss AI solutions for your business",
+//     phone: "+1 (555) 123-4567",
+//     email: "sales@indusai.com",
+//     icon: (
+//       <svg
+//         className="w-6 h-6"
+//         fill="none"
+//         stroke="currentColor"
+//         viewBox="0 0 24 24"
+//       >
+//         <path
+//           strokeLinecap="round"
+//           strokeLinejoin="round"
+//           strokeWidth={2}
+//           d="M13 7h8m0 0v8m0-8l-8 8-4-4-6 6"
+//         />
+//       </svg>
+//     ),
+//   },
+//   {
+//     name: "Support",
+//     description: "Get help with your AI implementation",
+//     phone: "+1 (555) 234-5678",
+//     email: "support@indusai.com",
+//     icon: (
+//       <svg
+//         className="w-6 h-6"
+//         fill="none"
+//         stroke="currentColor"
+//         viewBox="0 0 24 24"
+//       >
+//         <path
+//           strokeLinecap="round"
+//           strokeLinejoin="round"
+//           strokeWidth={2}
+//           d="M18.364 5.636l-3.536 3.536m0 5.656l3.536 3.536M9.172 9.172L5.636 5.636m3.536 9.192l-3.536 3.536M21 12a9 9 0 11-18 0 9 9 0 0118 0zm-5 0a4 4 0 11-8 0 4 4 0 018 0z"
+//         />
+//       </svg>
+//     ),
+//   },
+//   {
+//     name: "Partnerships",
+//     description: "Explore collaboration opportunities",
+//     phone: "+1 (555) 345-6789",
+//     email: "partners@indusai.com",
+//     icon: (
+//       <svg
+//         className="w-6 h-6"
+//         fill="none"
+//         stroke="currentColor"
+//         viewBox="0 0 24 24"
+//       >
+//         <path
+//           strokeLinecap="round"
+//           strokeLinejoin="round"
+//           strokeWidth={2}
+//           d="M17 20h5v-2a3 3 0 00-5.356-1.857M17 20H7m10 0v-2c0-.656-.126-1.283-.356-1.857M7 20H2v-2a3 3 0 015.356-1.857M7 20v-2c0-.656.126-1.283.356-1.857m0 0a5.002 5.002 0 019.288 0M15 7a3 3 0 11-6 0 3 3 0 016 0zm6 3a2 2 0 11-4 0 2 2 0 014 0zM7 10a2 2 0 11-4 0 2 2 0 014 0z"
+//         />
+//       </svg>
+//     ),
+//   },
+// ];
 
 export default function Contact() {
   return (
@@ -89,7 +89,7 @@ export default function Contact() {
         </Container>
       </section>
 
-      {/* Contact Methods */}
+      {/* Contact Methods
       <section className="py-4">
         <Container>
           <div className="grid md:grid-cols-3 gap-8">
@@ -119,9 +119,19 @@ export default function Contact() {
             ))}
           </div>
         </Container>
-      </section>
+      </section> */}
 
-      {/* Contact Form */}
+      <div
+        className="calendly-inline-widget min-w-[320px] h-[700px]"
+        data-url="https://calendly.com/indusai-app/meet"
+      ></div>
+      <script
+        type="text/javascript"
+        src="https://assets.calendly.com/assets/external/widget.js"
+        async
+      />
+
+      {/* Contact Form
       <section className="py-24 bg-gray-50">
         <Container>
           <div className="max-w-3xl mx-auto">
@@ -211,7 +221,7 @@ export default function Contact() {
             </div>
           </div>
         </Container>
-      </section>
+      </section> */}
 
       <ReadyToTransform />
 

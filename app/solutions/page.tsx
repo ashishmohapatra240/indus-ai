@@ -5,78 +5,126 @@ import Button from "../components/ui/Button";
 import Image from "next/image";
 import ReadyToTransform from "../components/sections/ReadyToTransform";
 const solutions = [
+  // {
+  //   title: "Machine Learning & AI",
+  //   description:
+  //     "Custom machine learning solutions tailored to your business needs",
+  //   image: "/images/solutions/machine-learning.webp",
+  //   features: [
+  //     "Predictive Analytics",
+  //     "Pattern Recognition",
+  //     "Anomaly Detection",
+  //     "Deep Learning Models",
+  //     "Computer Vision",
+  //     "Neural Networks",
+  //   ],
+  //   benefits: [
+  //     "Increase operational efficiency by 300%",
+  //     "Reduce manual errors by 95%",
+  //     "Cut operational costs by 50%",
+  //     "Accelerate decision-making process",
+  //   ],
+  //   useCase: {
+  //     title: "Global Manufacturing Company",
+  //     description:
+  //       "Implemented predictive maintenance system that reduced downtime by 75% and maintenance costs by 50%.",
+  //   },
+  // },
+  // {
+  //   title: "Natural Language Processing",
+  //   description: "Transform how you process and understand text data",
+  //   image: "/images/solutions/nlp.webp",
+  //   features: [
+  //     "Text Classification",
+  //     "Sentiment Analysis",
+  //     "Named Entity Recognition",
+  //     "Language Translation",
+  //     "Text Summarization",
+  //     "Chatbot Development",
+  //   ],
+  //   benefits: [
+  //     "Automate customer service operations",
+  //     "Process documents 10x faster",
+  //     "Improve customer satisfaction by 60%",
+  //     "Real-time language translation",
+  //   ],
+  //   useCase: {
+  //     title: "International Bank",
+  //     description:
+  //       "Deployed AI-powered customer service system that handles 80% of inquiries automatically.",
+  //   },
+  // },
+  // {
+  //   title: "Computer Vision",
+  //   description:
+  //     "See your business through the lens of artificial intelligence",
+  //   image: "/images/solutions/computer-vision.webp",
+  //   features: [
+  //     "Object Detection",
+  //     "Image Classification",
+  //     "Facial Recognition",
+  //     "Video Analysis",
+  //     "Quality Control",
+  //     "Visual Search",
+  //   ],
+  //   benefits: [
+  //     "Automate visual inspection tasks",
+  //     "Enhance security systems",
+  //     "Improve product quality",
+  //     "Real-time monitoring",
+  //   ],
+  //   useCase: {
+  //     title: "Retail Chain",
+  //     description:
+  //       "Implemented visual search system that increased online sales conversion by 45%.",
+  //   },
+  // },
   {
-    title: "Machine Learning & AI",
+    title: "Vijaya AI – Secure & Personalized LLMs for Enterprises",
     description:
-      "Custom machine learning solutions tailored to your business needs",
-    image: "/images/solutions/machine-learning.webp",
+      "Vijaya AI is a cutting-edge Large Language Model (LLM) solution designed to help enterprises and government organizations deploy custom AI models tailored to their data. With on-premise and cloud options, it ensures data security, cost efficiency (up to 70% savings), and seamless AI adoption for businesses looking to leverage generative AI.",
+    image: "/images/solutions/vijaya-ai.png",
     features: [
-      "Predictive Analytics",
-      "Pattern Recognition",
-      "Anomaly Detection",
-      "Deep Learning Models",
-      "Computer Vision",
-      "Neural Networks",
+      "Custom AI Models",
+      "On-Premise and Cloud Options",
+      "Data Security",
+      "Cost Efficiency",
+      "Seamless AI Adoption",
     ],
     benefits: [
-      "Increase operational efficiency by 300%",
-      "Reduce manual errors by 95%",
-      "Cut operational costs by 50%",
-      "Accelerate decision-making process",
+      "Up to 70% cost savings",
+      "Enhanced data security",
+      "Tailored solutions for enterprises",
+      "Improved operational efficiency",
     ],
     useCase: {
-      title: "Global Manufacturing Company",
+      title: "Enterprise Deployment",
       description:
-        "Implemented predictive maintenance system that reduced downtime by 75% and maintenance costs by 50%.",
+        "Implemented custom LLMs for various enterprises, ensuring data security and cost efficiency.",
     },
   },
   {
-    title: "Natural Language Processing",
-    description: "Transform how you process and understand text data",
-    image: "/images/solutions/nlp.webp",
-    features: [
-      "Text Classification",
-      "Sentiment Analysis",
-      "Named Entity Recognition",
-      "Language Translation",
-      "Text Summarization",
-      "Chatbot Development",
-    ],
-    benefits: [
-      "Automate customer service operations",
-      "Process documents 10x faster",
-      "Improve customer satisfaction by 60%",
-      "Real-time language translation",
-    ],
-    useCase: {
-      title: "International Bank",
-      description:
-        "Deployed AI-powered customer service system that handles 80% of inquiries automatically.",
-    },
-  },
-  {
-    title: "Computer Vision",
+    title: "VivOne AI– Intelligent Chat & Voice AI",
     description:
-      "See your business through the lens of artificial intelligence",
-    image: "/images/solutions/computer-vision.webp",
+      "Our AI Agent is a next-gen customer support solution that offers real-time chat and voice assistance, automating interactions with human-like accuracy. Designed for businesses across industries, it enhances customer experiences by providing instant, context-aware responses, reducing operational costs, and improving support efficiency.",
+    image: "/images/solutions/vivone-ai.png",
     features: [
-      "Object Detection",
-      "Image Classification",
-      "Facial Recognition",
-      "Video Analysis",
-      "Quality Control",
-      "Visual Search",
+      "Real-time Chat Assistance",
+      "Voice Interaction",
+      "Context-aware Responses",
+      "Human-like Accuracy",
+      "Operational Cost Reduction",
     ],
     benefits: [
-      "Automate visual inspection tasks",
-      "Enhance security systems",
-      "Improve product quality",
-      "Real-time monitoring",
+      "Enhanced customer experience",
+      "Instant support",
+      "Improved support efficiency",
+      "Adaptable for various enterprises",
     ],
     useCase: {
-      title: "Retail Chain",
+      title: "Customer Support Automation",
       description:
-        "Implemented visual search system that increased online sales conversion by 45%.",
+        "Deployed AI Agent for customer support, automating interactions and improving response times.",
     },
   },
 ];
@@ -193,10 +241,16 @@ export default function Solutions() {
               combine industry expertise with advanced technology to deliver
               measurable results.
             </p>
-            <div className="flex justify-center gap-4">
-              <Button size="lg">Schedule Demo</Button>
+            <div className="flex flex-wrap justify-center gap-4">
+              <Button size="lg">
+                <a href="https://calendly.com/indusai-app/meet">
+                  Schedule Demo
+                </a>
+              </Button>
               <Button variant="secondary" size="lg">
-                View Case Studies
+                <a href="https://www.linkedin.com/company/indus-ai/">
+                  View Case Studies
+                </a>
               </Button>
             </div>
           </div>
@@ -207,7 +261,7 @@ export default function Solutions() {
       {solutions.map((solution, index) => (
         <section
           key={solution.title}
-          className={`py-24 ${index % 2 === 0 ? "bg-white" : "bg-gray-50"}`}
+          className={`pb-24 ${index % 2 === 0 ? "bg-white" : "bg-gray-50"}`}
         >
           <Container>
             <div className="grid lg:grid-cols-2 gap-16 items-center">
@@ -260,7 +314,7 @@ export default function Solutions() {
                           className="flex items-center text-gray-600 font-raleway"
                         >
                           <svg
-                            className="w-5 h-5 text-blue-500 mr-3"
+                            className="w-5 h-5 text-[#2C514C] mr-3"
                             fill="none"
                             stroke="currentColor"
                             viewBox="0 0 24 24"
@@ -291,7 +345,7 @@ export default function Solutions() {
 
               <div className={index % 2 === 0 ? "" : "order-1"}>
                 <div className="relative">
-                  <div className="absolute inset-0 bg-gradient-to-r from-blue-500 to-purple-500 rounded-3xl blur-3xl opacity-20" />
+                  <div className="absolute inset-0 bg-gradient-to-r from-[#2C514C] to-[#729F99] rounded-3xl blur-3xl opacity-20" />
                   <Image
                     src={solution.image}
                     alt={solution.title}
@@ -307,7 +361,7 @@ export default function Solutions() {
       ))}
 
       {/* Industries Section */}
-      <section className="py-24 bg-gray-50">
+      <section className="pb-24 bg-gray-50">
         <Container>
           <div className="max-w-3xl mx-auto text-center mb-16">
             <h2 className="text-3xl font-bold text-gray-900 mb-4 font-raleway">
@@ -325,7 +379,7 @@ export default function Solutions() {
                 className="bg-white p-8 rounded-2xl shadow-sm border border-gray-100 hover:shadow-lg transition-all group"
               >
                 <div className="flex items-start gap-6">
-                  <div className="w-16 h-16 rounded-xl bg-black/5 flex items-center justify-center text-gray-900 group-hover:text-blue-600 transition-colors">
+                  <div className="w-16 h-16 rounded-xl bg-black/5 flex items-center justify-center text-gray-900 group-hover:text-[#2C514C] transition-colors">
                     {industry.icon}
                   </div>
                   <div className="flex-1">
@@ -339,7 +393,7 @@ export default function Solutions() {
                       {industry.solutions.map((solution) => (
                         <span
                           key={solution}
-                          className="inline-flex items-center px-3 py-1 rounded-full text-sm font-medium bg-gray-100 text-gray-800 group-hover:bg-blue-50 group-hover:text-blue-600 transition-colors font-raleway"
+                          className="inline-flex items-center px-3 py-1 rounded-full text-sm font-medium bg-gray-100 text-gray-800 group-hover:bg-blue-50 group-hover:text-[#2C514C] transition-colors font-raleway"
                         >
                           {solution}
                         </span>

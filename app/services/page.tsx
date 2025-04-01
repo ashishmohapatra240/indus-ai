@@ -4,89 +4,7 @@ import Container from "../components/ui/Container";
 import Button from "../components/ui/Button";
 import Image from "next/image";
 import ReadyToTransform from "../components/sections/ReadyToTransform";
-const services = [
-  {
-    title: "AI Strategy & Consulting",
-    description: "Transform your business with expert AI guidance",
-    image: "/images/services/consulting.jpg",
-    icon: (
-      <svg
-        className="w-8 h-8"
-        fill="none"
-        stroke="currentColor"
-        viewBox="0 0 24 24"
-      >
-        <path
-          strokeLinecap="round"
-          strokeLinejoin="round"
-          strokeWidth={1.5}
-          d="M9 20l-5.447-2.724A1 1 0 013 16.382V5.618a1 1 0 011.447-.894L9 7m0 13l6-3m-6 3V7m6 10l4.553 2.276A1 1 0 0021 18.382V7.618a1 1 0 00-.553-.894L15 4m0 13V4m0 0L9 7"
-        />
-      </svg>
-    ),
-    benefits: [
-      "Comprehensive AI readiness assessment",
-      "Strategic roadmap development",
-      "Technology stack optimization",
-      "ROI analysis and projections",
-      "Risk mitigation strategies",
-    ],
-  },
-  {
-    title: "Custom AI Development",
-    description: "Build powerful, tailored AI solutions",
-    image: "/services/development.jpg",
-    icon: (
-      <svg
-        className="w-8 h-8"
-        fill="none"
-        stroke="currentColor"
-        viewBox="0 0 24 24"
-      >
-        <path
-          strokeLinecap="round"
-          strokeLinejoin="round"
-          strokeWidth={1.5}
-          d="M10 20l4-16m4 4l4 4-4 4M6 16l-4-4 4-4"
-        />
-      </svg>
-    ),
-    benefits: [
-      "Custom ML model development",
-      "API and system integration",
-      "Scalable architecture design",
-      "Performance optimization",
-      "Continuous deployment support",
-    ],
-  },
-  {
-    title: "AI Implementation",
-    description: "Seamlessly deploy AI in your workflow",
-    image: "/services/implementation.jpg",
-    icon: (
-      <svg
-        className="w-8 h-8"
-        fill="none"
-        stroke="currentColor"
-        viewBox="0 0 24 24"
-      >
-        <path
-          strokeLinecap="round"
-          strokeLinejoin="round"
-          strokeWidth={1.5}
-          d="M4 7v10c0 2.21 3.582 4 8 4s8-1.79 8-4V7M4 7c0 2.21 3.582 4 8 4s8-1.79 8-4M4 7c0-2.21 3.582-4 8-4s8 1.79 8 4m0 5c0 2.21-3.582 4-8 4s-8-1.79-8-4"
-        />
-      </svg>
-    ),
-    benefits: [
-      "Seamless system integration",
-      "Team training and onboarding",
-      "Process optimization",
-      "Performance monitoring",
-      "Ongoing technical support",
-    ],
-  },
-];
+import ServicesSection from "../components/sections/ServicesSection";
 
 const expertise = [
   {
@@ -189,65 +107,26 @@ export default function Services() {
               From strategy to implementation, we provide end-to-end AI services
               that transform businesses and drive innovation.
             </p>
-            <div className="flex justify-center gap-4">
-              <Button size="lg">Schedule Consultation</Button>
+            <div className="flex justify-center gap-4 flex-wrap whitespace-nowrap">
+              <Button size="lg">
+                <a href="https://calendly.com/indusai-app/meet">
+                  Schedule Consultation
+                </a>
+              </Button>
               <Button variant="secondary" size="lg">
-                View Case Studies
+                <a href="https://www.linkedin.com/company/indus-ai/">
+                  View Case Studies
+                </a>
               </Button>
             </div>
           </div>
         </Container>
       </section>
 
-      {/* Services Grid */}
-      <section className="py-24 bg-gray-50">
-        <Container>
-          <div className="grid md:grid-cols-3 gap-8">
-            {services.map((service) => (
-              <div
-                key={service.title}
-                className="bg-white rounded-2xl p-8 shadow-sm border border-gray-100 hover:shadow-md transition-shadow group"
-              >
-                <div className="w-16 h-16 rounded-xl bg-black/5 flex items-center justify-center text-gray-900 mb-8 group-hover:text-blue-600 transition-colors">
-                  {service.icon}
-                </div>
-                <h3 className="text-2xl font-semibold text-gray-900 mb-4 font-raleway">
-                  {service.title}
-                </h3>
-                <p className="text-gray-600 mb-8 font-raleway">
-                  {service.description}
-                </p>
-                <ul className="space-y-3">
-                  {service.benefits.map((benefit) => (
-                    <li
-                      key={benefit}
-                      className="flex items-start text-gray-600 font-raleway"
-                    >
-                      <svg
-                        className="w-5 h-5 text-green-500 mr-3 mt-1 flex-shrink-0"
-                        fill="none"
-                        stroke="currentColor"
-                        viewBox="0 0 24 24"
-                      >
-                        <path
-                          strokeLinecap="round"
-                          strokeLinejoin="round"
-                          strokeWidth={2}
-                          d="M5 13l4 4L19 7"
-                        />
-                      </svg>
-                      <span>{benefit}</span>
-                    </li>
-                  ))}
-                </ul>
-              </div>
-            ))}
-          </div>
-        </Container>
-      </section>
+      <ServicesSection />
 
       {/* Technical Expertise Section */}
-      <section className="py-24 bg-gray-50">
+      <section className="pb-24 bg-gray-50">
         <Container>
           <div className="max-w-3xl mx-auto text-center mb-16">
             <h2 className="text-3xl font-bold text-gray-900 mb-4 font-raleway">
@@ -265,7 +144,7 @@ export default function Services() {
                 className="bg-white rounded-2xl p-8 shadow-sm border border-gray-100 hover:shadow-lg transition-all group"
               >
                 <div className="flex items-start gap-6">
-                  <div className="w-16 h-16 rounded-xl bg-black/5 flex items-center justify-center text-gray-900 group-hover:text-blue-600 transition-colors">
+                  <div className="w-16 h-16 rounded-xl bg-black/5 flex items-center justify-center text-gray-900 group-hover:text-[#2C514C] transition-colors">
                     {item.icon}
                   </div>
                   <div className="flex-1">
@@ -279,7 +158,7 @@ export default function Services() {
                       {item.tools.map((tool) => (
                         <span
                           key={tool}
-                          className="inline-flex items-center px-3 py-1 rounded-full text-sm font-medium bg-gray-100 text-gray-800 group-hover:bg-blue-50 group-hover:text-blue-600 transition-colors font-raleway"
+                          className="inline-flex items-center px-3 py-1 rounded-full text-sm font-medium bg-gray-100 text-gray-800 group-hover:bg-blue-50 group-hover:text-[#2C514C] transition-colors font-raleway"
                         >
                           {tool}
                         </span>
@@ -294,71 +173,75 @@ export default function Services() {
       </section>
 
       {/* Process Section */}
-      <section className="py-24 bg-gray-900 text-white">
+      <section className="py-24 bg-[#2C514C] text-white">
         <Container>
           <div className="text-center mb-16">
             <h2 className="text-3xl font-bold mb-6 font-raleway">
               Our Service Process
             </h2>
-            <p className="text-gray-400 max-w-2xl mx-auto font-raleway">
+            <p className="text-gray-400 max-w-2xl mx-auto font-raleway px-4">
               We follow a structured approach to ensure successful
               implementation of AI solutions for your business.
             </p>
           </div>
+          
           <div className="relative">
-            <div className="absolute left-1/2 -translate-x-1/2 h-full w-px bg-white/10" />
-            <div className="space-y-24">
+            {/* Timeline line - hidden on mobile */}
+            <div className="absolute left-1/2 -translate-x-1/2 h-full w-px bg-white/10 hidden lg:block" />
+            
+            <div className="space-y-12 lg:space-y-24">
               {[
                 {
                   step: "01",
                   title: "Discovery & Analysis",
                   description:
-                    "We begin by understanding your business needs and analyzing your current systems.",
+                    "We begin by understanding your business needs and analyzing your current systems. This involves identifying areas of improvement, understanding your target audience, and defining project goals.",
                 },
                 {
                   step: "02",
                   title: "Strategy Development",
                   description:
-                    "Our team creates a comprehensive implementation strategy tailored to your goals.",
+                    "Our team creates a comprehensive implementation strategy tailored to your goals. This includes defining project timelines, allocating resources, and outlining key performance indicators.",
                 },
                 {
                   step: "03",
                   title: "Implementation",
                   description:
-                    "We execute the strategy with continuous monitoring and adjustments.",
+                    "We execute the strategy with continuous monitoring and adjustments. This phase involves the actual deployment of the solution, ensuring it meets the project requirements and is aligned with your business objectives.",
                 },
                 {
                   step: "04",
                   title: "Optimization & Support",
                   description:
-                    "Ongoing optimization and support to ensure long-term success.",
+                    "Ongoing optimization and support to ensure long-term success. This includes post-implementation review, identifying areas for improvement, and providing ongoing maintenance and support to ensure the solution continues to meet your evolving business needs.",
                 },
               ].map((phase, index) => (
                 <div
                   key={phase.step}
-                  className={`relative grid md:grid-cols-2 gap-8 items-center ${
-                    index % 2 === 0 ? "" : "md:[&>div]:order-1"
+                  className={`relative flex flex-col lg:grid lg:grid-cols-2 gap-8 items-center ${
+                    index % 2 === 0 ? "" : "lg:[&>div]:order-1"
                   }`}
                 >
-                  <div>
-                    <div className="flex items-center gap-4 mb-4">
+                  <div className="text-center lg:text-left">
+                    <div className="flex flex-col lg:flex-row items-center lg:items-start gap-4 mb-4">
                       <span className="text-4xl font-bold text-white/20 font-raleway">
                         {phase.step}
                       </span>
-                      <h3 className="text-xl font-semibold font-raleway">
+                      <h3 className="text-2xl font-semibold font-raleway">
                         {phase.title}
                       </h3>
                     </div>
-                    <p className="text-gray-400 font-raleway">
+                    <p className="text-base lg:text-lg text-gray-400 font-raleway">
                       {phase.description}
                     </p>
                   </div>
-                  <div className="relative aspect-[4/3] rounded-xl overflow-hidden">
+                  <div className="relative aspect-[4/3] w-full max-w-lg mx-auto rounded-xl overflow-hidden shadow-lg transform transition-transform duration-300 hover:scale-105">
                     <Image
-                      src={`/images/services/process-${phase.step}.jpg`}
+                      src={`/images/services/process-${phase.step}.png`}
                       alt={phase.title}
                       fill
                       className="object-cover"
+                      sizes="(max-width: 768px) 100vw, (max-width: 1200px) 50vw, 33vw"
                     />
                   </div>
                 </div>
