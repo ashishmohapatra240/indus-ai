@@ -15,14 +15,14 @@ export default function ReadyToTransform() {
           </p>
           <div className="flex justify-center gap-4">
             <Button size="lg" className="">
-              Get Started
+              <a href="https://calendly.com/indusai-app/meet">Get Started</a>
             </Button>
             <Button
               variant="secondary"
               size="lg"
               className="border-white text-white hover:bg-white/10"
             >
-              Talk to Expert
+              <a href="https://calendly.com/indusai-app/meet">Talk to Expert</a>
             </Button>
           </div>
         </div>
