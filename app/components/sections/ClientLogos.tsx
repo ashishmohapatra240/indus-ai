@@ -14,13 +14,23 @@ import Image from "next/image";
 // ];
 
 const clients = [
-  { image: "/images/support/navrachna.png" },
-  { image: "/images/support/startupindia.png" },
+  // { image: "/images/support/navrachna.png" },
+  // { image: "/images/support/startupindia.png" },
+  { image: "/images/support/7span.png" },
+  { image: "/images/support/codelessly.png" },
+  { image: "/images/support/flutter.png" },
+  { image: "/images/support/hdfc_sky.png" },
+  { image: "/images/support/nonstop.png" },
+  { image: "/images/support/serverpod.png" },
+  { image: "/images/support/tata_digital.png" },
+  { image: "/images/support/tide.png" },
+  { image: "/images/support/welltested_ai.png" },
+  { image: "/images/support/zoho.png" },
 ];
 
 export default function ClientLogos() {
   return (
-    <section className="py-24 overflow-hidden bg-white">
+    <section className="py-24 overflow-hidden bg-white mx-auto max-w-7xl">
       <Container>
         <h2 className="text-center text-sm font-medium text-gray-500 mb-16 font-raleway">
           Supported by
@@ -43,7 +53,7 @@ export default function ClientLogos() {
           ))}
         </div>
       </Marquee> */}
-      <div className="flex flex-wrap gap-4 justify-center items-center">
+      <div className="grid grid-cols-2 md:grid-cols-3 lg:grid-cols-4 gap-4 justify-center items-center">
         {clients.map((client) => (
           <div
             key={client.image}
@@ -54,7 +64,7 @@ export default function ClientLogos() {
               alt={client.image}
               width={200}
               height={200}
-              className="w-full h-full object-contain border border-gray-200 rounded-md hover:scale-105 transition-all duration-300"
+              className="w-full h-30 p-4 object-contain border border-gray-200 rounded-md hover:scale-105 transition-all duration-300"
             />
           </div>
         ))}
