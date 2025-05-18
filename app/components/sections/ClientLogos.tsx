@@ -30,7 +30,7 @@ const clients = [
 
 export default function ClientLogos() {
   return (
-    <section className="py-24 overflow-hidden bg-white mx-auto max-w-7xl">
+    <section className="py-24 overflow-hidden bg-white mx-auto max-w-7xl px-4">
       <Container>
         <h2 className="text-center text-sm font-medium text-gray-500 mb-16 font-raleway">
           Supported by

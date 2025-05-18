@@ -8,9 +8,8 @@ import { Model } from "./Model";
 export default function Hero() {
   return (
     <section className="relative pt-32 pb-24 overflow-visible">
-      <Container>
-        <div className="lg:grid lg:grid-cols-2 gap-x-16 items-center">
-          {/* ─────────────────── LEFT ─────────────────── */}
+      <Container className="relative">
+        <div className="flex flex-col-reverse lg:flex-row gap-x-16 items-center">
           <div className="max-w-2xl">
             <h1 className="text-6xl md:text-7xl font-bold tracking-tight text-gray-900 mb-8 font-raleway">
               Voice AI for your business
@@ -34,8 +33,8 @@ export default function Hero() {
             </div>
           </div>
 
-          <div className="mt-16 lg:mt-0 flex justify-center lg:justify-end">
-            <div className="relative aspect-square w-full max-w-[540px] overflow-visible">
+          <div className="flex justify-center lg:justify-end">
+            <div className="relative aspect-square w-full max-w-[300px] lg:max-w-[540px] overflow-visible">
               <Canvas
                 camera={{ position: [20, -10, 40], fov: 45 }}
                 style={{ width: "100%", height: "100%" }}

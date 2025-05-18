@@ -184,11 +184,11 @@ export default function Services() {
               implementation of AI solutions for your business.
             </p>
           </div>
-          
+
           <div className="relative">
             {/* Timeline line - hidden on mobile */}
             <div className="absolute left-1/2 -translate-x-1/2 h-full w-px bg-white/10 hidden lg:block" />
-            
+
             <div className="space-y-12 lg:space-y-24">
               {[
                 {
