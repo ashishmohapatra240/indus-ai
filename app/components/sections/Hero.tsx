@@ -1,21 +1,23 @@
+"use client";
 import Container from "../ui/Container";
 import Button from "../ui/Button";
-import Image from "next/image";
+import { Canvas } from "@react-three/fiber";
+import { OrbitControls } from "@react-three/drei";
+import { Model } from "./Model";
 
 export default function Hero() {
   return (
-    <section className="relative pt-32 pb-24 overflow-hidden">
-      <Container className="relative">
+    <section className="relative pt-32 pb-24 overflow-visible">
+      <Container>
         <div className="lg:grid lg:grid-cols-2 gap-x-16 items-center">
+          {/* ─────────────────── LEFT ─────────────────── */}
           <div className="max-w-2xl">
             <h1 className="text-6xl md:text-7xl font-bold tracking-tight text-gray-900 mb-8 font-raleway">
-              Custom AI Development for Smarter Business
+              Voice AI for your business
             </h1>
             <p className="text-lg text-gray-600 mb-10 leading-relaxed font-raleway">
-              Empower your organization with cutting-edge AI solutions. From
-              enterprise AI and custom LLMs to Conversational AI and intelligent
-              automation, Indus AI helps businesses scale smarter, faster, and
-              more efficiently.{" "}
+              Revolutionary AI-driven Voice solutions with multilingual support
+              and seamless CRM integration.
               <span className="font-bold">Don’t just adapt—lead with AI.</span>
             </p>
             <div className="flex gap-4">
@@ -31,18 +33,24 @@ export default function Hero() {
               </Button>
             </div>
           </div>
-          <div className="mt-16 lg:mt-0">
-            <div className="relative aspect-square">
-              <div className="absolute inset-0"></div>
-              <div className="relative w-full h-full bg-white border border-gray-200 overflow-hidden">
-                <Image
-                  src="/images/hero.png"
-                  alt="Hero Image"
-                  className="w-full h-full object-cover"
-                  width={1000}
-                  height={1000}
+
+          <div className="mt-16 lg:mt-0 flex justify-center lg:justify-end">
+            <div className="relative aspect-square w-full max-w-[540px] overflow-visible">
+              <Canvas
+                camera={{ position: [20, -10, 40], fov: 45 }}
+                style={{ width: "100%", height: "100%" }}
+              >
+                <ambientLight intensity={0.6} />
+                <directionalLight position={[5, 5, 5]} intensity={12} />
+                <Model />
+                <OrbitControls
+                  // autoRotate
+                  // autoRotateSpeed={2}
+                  enableZoom={false}
+                  enablePan={false}
+                  // enableRotate={false}
                 />
-              </div>
+              </Canvas>
             </div>
           </div>
         </div>
